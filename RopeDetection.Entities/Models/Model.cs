@@ -17,7 +17,7 @@ namespace RopeDetection.Entities.Models
             this.TrainedModel = new TrainedModel();
         }
 
-        public int Name { get; set; }
+        public string Name { get; set; }
         public ModelType Type { get; set; }
         public DateTime CreatedDate { get; set; }
         public bool LearningStatus { get; set; }

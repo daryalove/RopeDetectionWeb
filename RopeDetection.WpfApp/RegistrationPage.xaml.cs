@@ -14,13 +14,20 @@ using System.Windows.Shapes;
 namespace RopeDetection.WpfApp
 {
     /// <summary>
-    /// Логика взаимодействия для Window2.xaml
+    /// Логика взаимодействия для LoginPage.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class RegistrationPage : Page
     {
-        public MainWindow()
+        public RegistrationPage()
         {
             InitializeComponent();
+            Btn_Registration.Click += BtnRegistrationClick;
+        }
+
+        private void BtnRegistrationClick(object sender, RoutedEventArgs e)
+        {
+            ListOfModels listOfModels = new ListOfModels();
+            this.NavigationService.Navigate(listOfModels);
         }
     }
 }

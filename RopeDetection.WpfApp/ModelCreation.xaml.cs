@@ -14,13 +14,20 @@ using System.Windows.Shapes;
 namespace RopeDetection.WpfApp
 {
     /// <summary>
-    /// Логика взаимодействия для Window2.xaml
+    /// Логика взаимодействия для ModelCreation.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class ModelCreation : Page
     {
-        public MainWindow()
+        public ModelCreation()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Модель была успешно создана !", "Создание модели");
+            HomePage _homePage = new HomePage();
+            this.NavigationService.Navigate(_homePage);
         }
     }
 }

@@ -14,13 +14,14 @@ using System.Windows.Shapes;
 namespace RopeDetection.WpfApp
 {
     /// <summary>
-    /// Логика взаимодействия для Window2.xaml
+    /// Логика взаимодействия для ImagesDownload.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class ImagesDownload : Page
     {
-        public MainWindow()
+        public ImagesDownload(string nameModel)
         {
             InitializeComponent();
+            NameOfModel.Text += nameModel;
         }
     }
 }
